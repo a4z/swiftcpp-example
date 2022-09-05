@@ -1,5 +1,5 @@
 name: build-and-run
-on: 
+on:
   push:
     branches: [main]
 
@@ -9,6 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: seanmiddleditch/gha-setup-ninja@master
+    - name: Show XCode version
+      run: /usr/bin/xcodebuild -version
     - name: Configure
       run: cmake -S . -B build -G "Ninja Multi-Config"
     - name: Build
