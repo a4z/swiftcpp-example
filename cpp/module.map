@@ -1,0 +1,5 @@
+module CppLib {
+    header "mypoint.hpp"
+    requires cplusplus
+    export *
+}
