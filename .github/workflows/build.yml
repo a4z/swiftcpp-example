@@ -15,7 +15,7 @@ jobs:
       run: cmake -S . -B build -G "Ninja Multi-Config"
     - name: Build
       run: cmake --build build --config Debug
-    # - name: Test
-    #   run: cmake --build build --config Debug --target test
+    - name: Test
+      run: cmake --build build --config Debug --target test
     - name: Run app
       run: ./build/Debug/swiftcpp-example
