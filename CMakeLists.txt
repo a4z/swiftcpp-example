@@ -22,4 +22,4 @@ target_link_libraries(swiftcpp-example PRIVATE mypoint)
 
 
 # point_test.swift:19:5: error: cannot find 'XCTAssertEqual' in scope
-# add_subdirectory(Tests)
+add_subdirectory(Tests)
